@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background:rgb(20, 20, 20);
+}
+.container-area{
+    max-width: 960px;
+    margin: 60px auto;
+    background: rgb(0,0,0);
+    padding: 0 15px;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(48,46,46,1) 100%);
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.header-top{
+    padding-top: .5rem ;
+    padding-bottom: 2rem ;
+}
+.header-top h1{
+    color: #fff;
+    
+}
+ul.menu{
+    margin-top:1rem;
+    display: flex;
+    font-size:12px;
+    list-style:none;
+}
+.menu li{
+    margin-right: 2rem;
+    
+}
+.menu li a{
+    color: rgb(121,121,121);
+    text-decoration:none;
+    transition:0.3s;
+    padding-bottom: 10px;
+    border-bottom:2px solid transparent;
+}
+.menu li a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    border-bottom:2px solid rgb(96, 255, 72);
+}
+.section-title{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    color: #fff;
+    border-bottom: 1px solid rgb(55,55,55);
+    padding-bottom: 1rem;
+}
+.sec-r a{
+    color: rgb(121,121,121);
+    margin-left: .5rem;
+}
+.sec-r a:hover{
+    color: rgb(255, 255, 255);
+    transition:0.3s;
+    margin-left: .5rem;
+}
+.sec-l{
+    color:rgb(248, 245, 245);
+}
+.section-grid{
+    margin-top:1rem;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 1rem;
+}
+.sec-item{
+    color:#fff;
+    font-size:10px;
+}
+.sec-img img{
+    width:100%;
+}
+.sec-info{
+    margin-top:.5rem;
+}
+.sec-info h3{
+    margin: .5rem 0;
+}
+.sec-info p{
+    color: rgb(121,121,121);
+}
+footer{
+    margin-top:2rem;
+    color:#fff;
+    text-align: center;
+}
+.footer-grid{
+    padding-top: 1rem;
+    border-top: 1px solid rgb(55,55,55);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+}
+.footer-item img{
+    width: 100%;
+}
+.footer-img{
+    position: relative;
+}
+.footer-item p{
+    color: rgb(121,121,121);
+    font-size:14px;
+    margin-top: .5rem;
+}
+.footer-img img{
+    opacity: 0.8;
+}
+.footer-img h2{
+    z-index: 10;
+    position: absolute;
+    color:rgb(248, 245, 245);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+@media only screen and (max-width:630px){
+    .section-grid{
+        margin-top:1rem;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 1rem;
+    }
+
+    
+    
+}
